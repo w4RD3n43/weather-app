@@ -1,13 +1,95 @@
-body {
+body{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0px;
+  font-family: Inter,Helvetica Neue,Helvetica,Arial,sans-serif;
+  background-color: #039BE5;
+}
+.header{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color:  #C2D9E8   ;
+
+}
+.input{
+width: 20vw; 
+color: rgb(102, 102, 102);
+border-radius: 2.5vw; 
+border-bottom-right-radius: 0px;
+border-top-right-radius: 0px;
+padding: 0.5vw 1vw 0.5vw 1vw; 
+border: 0; 
+}
+.btn-1{
+  background-color: white;
+  border: none;
+  padding-right: 10px;
+  border-top-right-radius: 2.5vw;
+  border-bottom-right-radius: 2.5vw;
+}
+.btn-1:hover{
+  cursor: pointer;
+}
+.image{
+  height: 35px;
+}
+.spinner {
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  background: 
+    radial-gradient(farthest-side,#C2D9E8 95%,#0000) 50% 1px/12px 12px no-repeat,
+    radial-gradient(farthest-side,#0000 calc(100% - 14px),#E3EFF8 0);
+  animation:s9 2s infinite linear;
+}
+@keyframes s9 {to{transform: rotate(1turn)}}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.information-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  background-size: cover;
+}
+.City-information{
+  width: 50vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  border-radius: 50px;
+}
+.past-info{
+  width: 20vw;
+  height: 80vh;
+  border-radius: 50px;
+}
+.location-img{
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+}
+.location{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.city{
+  padding: 0;
+  margin: 0;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.temp{
+  font-size: 100px;
 }
